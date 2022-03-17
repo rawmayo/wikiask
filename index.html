@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>WikiAsk - A Wikipedia Search App</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="search">
+          <h1 class="brand-name">
+            <a href="https://github.com/rawmayo/wikiask" target="_blank">
+              Wiki<span class="unique"
+                >Ask<i class="fas fa-circle-question brand-icon"></i
+              ></span>
+            </a>
+          </h1>
+          <form class="search-bar">
+            <input
+              type="text"
+              autocomplete="off"
+              placeholder="Search Wikipedia"
+              class="search-input"
+            />
+            <div class="search-buttons">
+              <button type="button" class="button clear-button d-none">
+                <i class="fas fa-times"></i>
+              </button>
+              <button type="submit" class="button search-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <div class="search-found d-none">
+            <p class="result-count"></p>
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="loader d-none">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="footer-source">
+          &#8226; Powered by
+          <a href="https://wikipedia.org" target="_blank">Wikipedia</a> &#8226;
+        </p>
+      </div>
+    </footer>
+    <script src="./js/main.js" type="module" defer></script>
+  </body>
+</html>
